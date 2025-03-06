@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swiper-navigation-color: #ffffff;
+  --swiper-pagination-color: #ffffff;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+.content-row .swiper-slide {
+  @apply px-2;
+}
+
+.content-row .swiper-button-next,
+.content-row .swiper-button-prev {
+  @apply opacity-0 transition-opacity duration-200;
+}
+.sci-fi-text {
+  font-family: 'Orbitron', sans-serif; /* Use a futuristic font */
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff); /* Gradient text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff; /* Glow effect */
+  animation: glow 1.5s infinite alternate; /* Optional: Add a glowing animation */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+  }
+}
+
+.high-quality-image {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.landscape-image {
+  aspect-ratio: 16 / 9; /* Landscape aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%; /* Full width of the container */
+  height: auto; /* Height adjusts automatically based on aspect ratio */
+}
+
+.content-row:hover .swiper-button-next,
+.content-row:hover .swiper-button-prev {
+  @apply opacity-100;
+}
