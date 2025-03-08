@@ -9,7 +9,7 @@ export const config = {
     title: 'StreamFlix',
     description: 'Your Ultimate Streaming Platform',
     version: '1.0.0',
-    baseUrl: 'http://localhost:5173', // Base URL for the frontend
+    baseUrl: 'https://bone-stream.vercel.app/', // Base URL for the frontend
   },
     image: {
       config: {
