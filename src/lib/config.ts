@@ -9,8 +9,8 @@ export const config = {
     title: 'StreamFlix',
     description: 'Your Ultimate Streaming Platform',
     version: '1.0.0',
-    baseUrl: 'https://bone-stream.vercel.app/', // Base URL for the frontend
-  },
+    baseUrl: 'https://bone-stream-tau.vercel.app', // Base URL for the frontend
+  },      
     image: {
       config: {
         url: 'https://imgcdn.media/pv/341', // Base URL for movie images
